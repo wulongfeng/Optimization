@@ -48,6 +48,7 @@ while  norm(g) > tol
 
     p=dogLeg(g, B, delta);
     %p=twoDim(g, B, delta);
+	%p=twoDimUpdate(g, B, delta);
 
     redu=func(x)-func(x+p);
     pred_redu= -(g'*p + 0.5*p'*B*p);
